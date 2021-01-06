@@ -6,4 +6,3 @@ dataframe_sorted_indexed = dataframe_sorted.set_index("Date")
 print(dataframe_sorted_indexed)
 dataframe_sorted_indexed.plot(figsize=(16,9))
 plt.show()
-testest
