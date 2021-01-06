@@ -8,6 +8,9 @@ To-Do`s
 -	(Wie wird ende der accumulation gekennzeichnet? -> manuell eintragen vermutlich)
 -	Generell zeiträume aller phasen vergleichen (z.B. bear market nach 1./2./3. Halving)
 
+- API Schnittstelle 
+
+
 
 Doku
 -	Was die Problemstellung ist
