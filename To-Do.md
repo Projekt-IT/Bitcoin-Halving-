@@ -9,6 +9,7 @@ To-Do`s
 -	Generell zeiträume aller phasen vergleichen (z.B. bear market nach 1./2./3. Halving)
 
 - API Schnittstelle
+- Doku Konzept
 
 
 
