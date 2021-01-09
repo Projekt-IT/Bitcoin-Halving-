@@ -34,6 +34,6 @@ plt.yticks(np.arange(0, 25000, 1000))
 #Vertikale  Linie an der Stelle 'x_pos' für Halvings
 #x_pos = 2016-01-03
 plt.vlines(x = 2016, color = "c", ymin = 0, ymax = 25000)
--> position in datetime bekommen
+#-> position in datetime bekommen
 
 plt.show()
