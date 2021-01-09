@@ -36,7 +36,7 @@ plt.ylim(0, 25000)
 plt.yticks(np.arange(0, 25000, 1000))
 
 #dateformat in monat/Jahr (mit DateFormatter), Eingabeformate (https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
-#date_format = DateFormatter("%b-%y")
+#date_format = DateFormatter("%b-%Y")
 
 #Skalierung x-Achse (in Datetime umwandeln)
 
