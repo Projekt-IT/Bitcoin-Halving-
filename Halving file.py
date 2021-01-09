@@ -5,4 +5,15 @@ dataframe_sorted = dataframe.sort_values(["Date"], ascending=True)
 dataframe_sorted_indexed = dataframe_sorted.set_index("Date")
 print(dataframe_sorted_indexed)
 dataframe_sorted_indexed.plot(figsize=(16,9))
+
+#Schwarzer Hintergrund
+plt.style.use("dark_background")
+
+#Achsenbeschriftung
+plt.xlabel("Date")
+plt.ylabel("Close Stock Value")
+
+#Gitternetz einfügen
+plt.grid()
+
 plt.show()
