@@ -23,26 +23,28 @@ plt.style.use("dark_background")
 plt.title("BTC-Aktie - Halvings")
 
 #Achsenbeschriftung
-plt.xlabel("Date")
-plt.ylabel("Closing Stock Value")
+plt.xlabel("Date [in 100 days]")
+plt.ylabel("Closing Stock Value [in $]")
 
 #Gitternetz einfügen
 plt.grid()
 
 #Skalierung absolut y-Achse
 plt.ylim(0, 25000)
+plt.xlim(0, 2500)
 
 #Skalierung Abstufung y-Achse
-plt.yticks(np.arange(0, 25000, 1000))
+plt.yticks(np.arange(0, 25000, 2500))
+plt.xticks(np.arange(0, 2500, 100))
 
 #dateformat in monat/Jahr (mit DateFormatter), Eingabeformate (https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
 #date_format = DateFormatter("%b-%Y")
-
+#loc = MonthLocator(bymonth=Aug, bymonthday=1, interval=1, tz=none)
 #Skalierung x-Achse (in Datetime umwandeln)
 
 
 #Vertikale  Linie an der Stelle 'x_pos' für Halvings
-plt.vlines(x = 2, color = "c", ymin = 0, ymax = 25000)
+plt.vlines(x = 500, color = "c", ymin = 0, ymax = 25000)
 #-> position in datetime bekommen
 
 plt.show()
