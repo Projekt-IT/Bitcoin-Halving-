@@ -1,20 +1,23 @@
 To-Do`s
--	Halvings in Graph implementieren (mit vertikalen Strichen) -> manuell möglich
--	Skalierung für bessere Übersichtlichkeit des Graphen anpassen -> x-Achse problematisch wegen Datum
--	Phasen erkennen (aus tabelle anstiege, peaks, etc in gewünschtem zeiträumen auslesen) + darstellen (evtl auch in farbigen Blöcken wie Grafiken)
--	Achsenbeschriftung -> x-Achse problematisch wegen Datum
--	Wie lange (zeitraum) + um wie viel im bear market gesunken?
--	(Wie wird ende der accumulation gekennzeichnet? -> manuell eintragen vermutlich)
--	Generell zeiträume aller phasen vergleichen (z.B. bear market nach 1./2./3. Halving)
 -   API Schnittstelle
--   Doku Konzept
 
+Graph
+-   Gleichungen für Code Verwenden
+-   Achsenbeschriftung -> x-Achse problematisch wegen Datum
+-	Skalierung für bessere Übersichtlichkeit des Graphen anpassen -> x-Achse problematisch wegen Datum
+-	Halvings implementieren (mit vertikalen Strichen) -> manuell möglich
+-   Phasen darstellen (farbig)
 
-
+Auswertung Graph 
+-   Eigenschaften der Phasen vergleichen
+    -> längerer Zeitraum, höherer Maximalwert, etc.
 Doku
 -	Was die Problemstellung ist
 -	Wie Ihr Programm diese Problemstellung löst
 -	Wie das Programm zu verwenden ist
+-   "Vorhersage-Tabelle" implementieren? 
+
+
 
 
 Ereignis,	Datum,	Anzahl der Blöcke,	Block-Prämie,	Anzahl der neuen Bitcoins zwischen den Events
