@@ -1,15 +1,13 @@
 To-Do`s
--	Halvings in Graph implementieren (mit vertikalen Strichen)
--	Skalierung für bessere Übersichtlichkeit des Graphen anpassen
+-	Halvings in Graph implementieren (mit vertikalen Strichen) -> manuell möglich
+-	Skalierung für bessere Übersichtlichkeit des Graphen anpassen -> x-Achse problematisch wegen Datum
 -	Phasen erkennen (aus tabelle anstiege, peaks, etc in gewünschtem zeiträumen auslesen) + darstellen (evtl auch in farbigen Blöcken wie Grafiken)
--	Datum einfügen (mehr als alle zwei jahre wie bis jetzt)
--	Achsenbeschriftung
+-	Achsenbeschriftung -> x-Achse problematisch wegen Datum
 -	Wie lange (zeitraum) + um wie viel im bear market gesunken?
 -	(Wie wird ende der accumulation gekennzeichnet? -> manuell eintragen vermutlich)
 -	Generell zeiträume aller phasen vergleichen (z.B. bear market nach 1./2./3. Halving)
-
-- API Schnittstelle
-- Doku Konzept
+-   API Schnittstelle
+-   Doku Konzept
 
 
 
