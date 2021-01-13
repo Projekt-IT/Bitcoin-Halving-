@@ -20,15 +20,15 @@ plt.style.use("dark_background")
 #-> funktioniert nicht
 
 #Überschrift
-plt.title("BTC-Aktie - Halvings")
+plt.title("BTC-Aktie - Halvings", fontsize=20)
 
 #y-Achse logarithmisch
 plt.yscale('log',basey=2)
--> repräsentierende Darstellung ohne Basis finden
+#-> repräsentierende Darstellung ohne Basis finden
 
 #Achsenbeschriftung
-plt.xlabel("Date [in 100 days]")
-plt.ylabel("Closing Stock Value [in $] - logarithmic")
+plt.xlabel("Date [in 100 days]",fontsize=12)
+plt.ylabel("Closing Stock Value [in $] - logarithmic",fontsize=12)
 
 #Gitternetz einfügen
 plt.grid()
