@@ -22,19 +22,22 @@ plt.style.use("dark_background")
 #Überschrift
 plt.title("BTC-Aktie - Halvings")
 
+#y-Achse logarithmisch
+plt.yscale("log")
+
 #Achsenbeschriftung
 plt.xlabel("Date [in 100 days]")
-plt.ylabel("Closing Stock Value [in $]")
+plt.ylabel("Closing Stock Value [in $] - logarithmic")
 
 #Gitternetz einfügen
 plt.grid()
 
 #Skalierung absolut y-Achse
-plt.ylim(0, 25000)
+#plt.ylim(0, 25000)
 plt.xlim(0, 2500)
 
 #Skalierung Abstufung y-Achse
-plt.yticks(np.arange(0, 25000, 2500))
+#plt.yticks(np.arange(0, 25000, 2500))
 plt.xticks(np.arange(0, 2500, 100))
 
 #dateformat in monat/Jahr (mit DateFormatter), Eingabeformate (https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
