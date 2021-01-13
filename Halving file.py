@@ -23,7 +23,8 @@ plt.style.use("dark_background")
 plt.title("BTC-Aktie - Halvings")
 
 #y-Achse logarithmisch
-plt.yscale("log")
+plt.yscale('log',basey=2)
+-> repräsentierende Darstellung ohne Basis finden
 
 #Achsenbeschriftung
 plt.xlabel("Date [in 100 days]")
@@ -37,7 +38,7 @@ plt.grid()
 plt.xlim(0, 2500)
 
 #Skalierung Abstufung y-Achse
-#plt.yticks(np.arange(0, 25000, 2500))
+#plt.yticks(np.arange(0, 25000, 5)) -> durch logarithmus funktioniert Skalierung nichtmehr
 plt.xticks(np.arange(0, 2500, 100))
 
 #dateformat in monat/Jahr (mit DateFormatter), Eingabeformate (https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
