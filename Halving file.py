@@ -23,7 +23,7 @@ plt.style.use("dark_background")
 plt.title("BTC-Aktie - Halvings", fontsize=20)
 
 #y-Achse logarithmisch
-plt.yscale('log',basey=2)
+plt.yscale('log',base =2)
 #-> repräsentierende Darstellung ohne Basis finden
 
 #Achsenbeschriftung
