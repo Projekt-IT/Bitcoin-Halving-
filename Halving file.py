@@ -52,3 +52,8 @@ plt.vlines(x = 500, color = "c", ymin = 0, ymax = 25000)
 #-> position in datetime bekommen
 
 plt.show()
+
+#nomics csv
+df = pd.read_csv("Nomics-CurrencyHistory-BTC-USD-1d-2021-01-14T10_38_44.027Z.csv")
+extr_df = df[["close","timestamp"]]
+print(extr_df)
