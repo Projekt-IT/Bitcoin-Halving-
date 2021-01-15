@@ -39,11 +39,13 @@ plt.xlim(0, 2500)
 
 #Skalierung Abstufung y-Achse
 #plt.yticks(np.arange(0, 25000, 5)) -> durch logarithmus funktioniert Skalierung nichtmehr
-plt.xticks(np.arange(0, 2500, 100))
+plt.xticks(np.arange(0, 2500, 10))
+#plt.yticks(np.arange(0, 100000, 10))
 
 #dateformat in monat/Jahr (mit DateFormatter), Eingabeformate (https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
 #date_format = DateFormatter("%b-%Y")
 #loc = MonthLocator(bymonth=Aug, bymonthday=1, interval=1, tz=none)
+
 #Skalierung x-Achse (in Datetime umwandeln)
 
 
@@ -57,3 +59,7 @@ plt.show()
 df = pd.read_csv("Nomics-CurrencyHistory-BTC-USD-1d-2021-01-14T10_38_44.027Z.csv")
 extr_df = df[["close","timestamp"]]
 print(extr_df)
+
+#Timestamp nur Datum, keine Uhrzeit
+df[["Date","Time"]] = df["sample_date"].str.split("T", expand = True)
+df["Date"] = pd.to_datetime(df.Date)
