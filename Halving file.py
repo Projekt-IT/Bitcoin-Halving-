@@ -23,7 +23,7 @@ plt.style.use("dark_background")
 plt.title("BTC-Aktie - Halvings", fontsize=20)
 
 #y-Achse logarithmisch
-plt.yscale('log',base =2)
+plt.yscale('log', base=2)
 #-> repräsentierende Darstellung ohne Basis finden
 
 #Achsenbeschriftung
@@ -39,7 +39,8 @@ plt.xlim(0, 2500)
 
 #Skalierung Abstufung y-Achse
 #plt.yticks(np.arange(0, 25000, 5)) -> durch logarithmus funktioniert Skalierung nichtmehr
-plt.xticks(np.arange(0, 2500, 10))
+plt.xticks(np.arange(0, 2500, 100 ))
+
 #plt.yticks(np.arange(0, 100000, 10))
 
 #dateformat in monat/Jahr (mit DateFormatter), Eingabeformate (https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
@@ -55,11 +56,14 @@ plt.vlines(x = 500, color = "c", ymin = 0, ymax = 25000)
 
 plt.show()
 
+
 #nomics csv
 df = pd.read_csv("Nomics-CurrencyHistory-BTC-USD-1d-2021-01-14T10_38_44.027Z.csv")
 extr_df = df[["close","timestamp"]]
 print(extr_df)
 
 #Timestamp nur Datum, keine Uhrzeit
-df[["Date","Time"]] = df["sample_date"].str.split("T", expand = True)
+df[["Date","Time"]] = df["timestamp"].str.split("T", expand = True)
 df["Date"] = pd.to_datetime(df.Date)
+extr_df_new = df[["Date", "close"]]
+print(extr_df_new)
